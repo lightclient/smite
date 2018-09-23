@@ -21,7 +21,7 @@ const provider = new HDWalletProvider(secrets.mnemonic, 'https://rinkeby.infura.
 const web3 = new Web3(provider);
 
 async function handler() {
-	const userAddress = (await web3.eth.getAccounts())[0];
+	const userAddress = (await web3.eth.getAccounts())[9];
 	const wallet = provider.wallets[userAddress.toLowerCase()]
 	const private_key = '0x' + wallet._privKey.toString('hex');
 
@@ -56,6 +56,8 @@ async function handler() {
       parts,
       signature,
     }
+
+  console.log('Account balance:', web3.utils.fromWei(await web3.eth.getBalance(userAddress), 'ether'), 'ETH\n')
 
 	console.log(params)
 
