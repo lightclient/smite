@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore } from 'redux'
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import Counter from './components/Counter'
 import counter from './reducers'
+import { reducers as smiteReducers } from 'smite'
 
 const store = createStore(
-	counter,
+	  combineReducers({
+    	counter: counter,
+    	...smiteReducers,
+  	}),
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
