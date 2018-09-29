@@ -12,9 +12,14 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
     "react-hot-loader": "^4.3.11",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
@@ -24,6 +29,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "web3": "^1.0.0-beta.36"
   }
 }

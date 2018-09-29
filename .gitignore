@@ -5,5 +5,6 @@ jspm_packages
 # Serverless directories
 .serverless
 
+.DS_Store
 .webpack
 secrets.json

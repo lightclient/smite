@@ -1,6 +1,6 @@
 const packageName = 'smite'
 
-const initialState {
+const initialState = {
 	loading: false,
 	error: false,
 }
@@ -52,14 +52,14 @@ function RoleReducer(state = initialState, action) {
   }
 }
 
-export actions = [
+export const actions = {
 	addRole,
 	addRoleSuccess,
 	addRoleFail,
-]
+}
 
-export actionTypes = [
+export const actionTypes = {
 	ADD_ROLE,
 	ADD_ROLE_SUCCESS,
 	ADD_ROLE_FAIL,
-]
+}

@@ -1,6 +1,6 @@
 const packageName = 'smite'
 
-const initialState {
+const initialState = {
 	loading: false,
 	error: false,
 }
@@ -37,7 +37,7 @@ function DelegationServerReducer(state = initialState, action) {
     		...state,
     		loading: false,
     		error: false,
-            transactionHash:
+            transactionHash
     	}
     }
 
@@ -54,14 +54,14 @@ function DelegationServerReducer(state = initialState, action) {
   }
 }
 
-export actions = [
+export const actions = {
     sendMetaTransaction,
     sendMetaTransactionSuccess,
     sendMetaTransactionFail,
-]
+}
 
-export actionTypes = [
+export const actionTypes = {
     SEND_META_TRANSACTION,
     SEND_META_TRANSACTION_SUCCESS,
     SEND_META_TRANSACTION_FAIL,
-]
+}

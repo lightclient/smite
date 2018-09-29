@@ -123,32 +123,20 @@ function DelegationContractReducer(state = initialState, action) {
 
 export default DelegationContractReducer;
 
-export actions = [
+export const actions = {
 	deployContract,
-	deployContractSuccess
+	deployContractSuccess,
 	deployContractFail,
 	loadContract,
 	loadContractSuccess,
 	loadContractFail,
-	addRole,
-	addRoleSuccess,
-	addRoleFail,
-	sendMetaTransaction,
-	sendMetaTransactionSuccess,
-	sendMetaTransactionFail,
-]
+}
 
-export actionTypes = [
+export const actionTypes = {
 	DEPLOY_CONTRACT,
 	DEPLOY_CONTRACT_SUCCESS,
 	DEPLOY_CONTRACT_FAIL,
 	LOAD_CONTRACT,
 	LOAD_CONTRACT_SUCCESS,
 	LOAD_CONTRACT_FAIL,
-	ADD_ROLE,
-	ADD_ROLE_SUCCESS,
-	ADD_ROLE_FAIL,
-	SEND_META_TRANSACTION,
-	SEND_META_TRANSACTION_SUCCESS,
-	SEND_META_TRANSACTION_FAIL,
-]
+}
